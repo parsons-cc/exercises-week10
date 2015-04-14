@@ -75,7 +75,6 @@ var mySketch = new p5(function(sketch){
     var now = sketch.floor(Date.now()*.001);
     // var now = 1428411600; // 8am
     var percentage = sketch.map(now, data.sys.sunrise, data.sys.sunset, 0, 1);
-    var mix = sketch.lerpColor(red, blue, percentage);
 
     sketch.background(blue);
     sketch.fill(red);
